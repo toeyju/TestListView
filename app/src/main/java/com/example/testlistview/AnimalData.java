@@ -14,11 +14,8 @@ public class AnimalData {
 
     public ArrayList<Animal> animalList;
 
-    public static AnimalData getInstance() {
-        return sInstance;
-    }
 
-    public AnimalData getsInstance(){
+    public static AnimalData getInstance(){
         if(sInstance == null){
             sInstance = new AnimalData();
         }

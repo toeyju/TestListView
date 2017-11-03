@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsoluteLayout;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,9 +14,9 @@ import android.widget.TextView;
 import com.example.testlistview.R;
 import com.example.testlistview.model.Animal;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * Created by RTA on 10/29/2017.

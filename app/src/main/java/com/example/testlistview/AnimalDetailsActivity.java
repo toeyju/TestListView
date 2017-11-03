@@ -21,12 +21,16 @@ public class AnimalDetailsActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
-        int picture = intent.getIntExtra("picture", 0);
+        //String name = intent.getStringExtra("name");
+        //int picture = intent.getIntExtra("picture", 0);
+        int position = intent.getIntExtra("position",0);
 
-        nameTextView.setText(name);
-        animalImageView.setImageResource(picture);
+        AnimalData animalData = AnimalData.getInstance();
+        Animal animal = animalData.animalList.get(position);
 
-        getSupportActionBar().setTitle(name);
+        nameTextView.setText(animal.detail);
+        animalImageView.setImageResource(animal.picture);
+
+        getSupportActionBar().setTitle(animal.name);
     }
 }
